@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Digital Litigation Resources Hub</title>
+</head>
+<body>	
+    
+    <nav class="navbar">
+        <img class="logo" src="image logo.png" alt="Your Logo">
+        <button onclick="openModal()" class="calendar-btn">View Courtroom Calendar</button>
+        <div class="dropdown">
+            <div class="dropdown-header">
+                <button onclick="toggleDropdown()" class="dropbtn">Contact Information</button>
+                <img src="https://static.vecteezy.com/system/resources/previews/010/829/986/large_2x/phone-icon-in-trendy-flat-style-free-png.png" alt="Phone Icon" class="phone-icon">
+            </div>
+            <div id="myDropdown" class="dropdown-content">
+                <div class="email-container">
+                    <a href="#">digital.litigation@supcourt.vic.gov.au</a>
+                    <a href="#">transcript@supcourt.vic.gov.au</a>
+                    <a href="#">civilcourtroombookings@supcourt.vic.gov.au</a>
+                    <a href="#">scvit@supcourt.vic.gov.au</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="calendarModal" class="modal-calendar">
+        <div class="modal-content">
+            <a href="https://www.supremecourt.vic.gov.au/daily-hearing-list" target="_blank" class="calendar-link">Courtroom Calendar</a>
+            <a href="https://www.supremecourt.vic.gov.au/courtroom-booking-form" target="_blank" class="calendar-link">Courtroom Booking Form</a>
+            <button onclick="closeModal()" class="close-btn">Close</button>
+        </div>
+    </div>
+
+    <header>
+        <h1 class="page-heading">Digital Litigation Resources Hub</h1>
+        <section class="flex-container">
+            <p class = "paragraph">Welcome to the Supreme Court of Victoria's Digital Litigation Resources Hub. Find guidance, instructional videos, and resources to help the Judiciary and Court staff navigate our virtual and electronic operations.</p>
+        </section>  
+    </header>
+
+        <main class="main">
+            <div class="card card-division-resources" onmouseover="showModal(this)" onmouseout="hideModal(this)">
+                <img src="https://static.vecteezy.com/system/resources/previews/007/063/103/non_2x/bank-building-icon-isolated-on-white-background-free-vector.jpg" alt="Division Resources">
+                <h2 class = "card-heading">Division Resources</h2>
+                <button>View Resources</button>
+                <div class="modal">Explore resources tailored to specific court divisions, including guidelines, procedural rules, and division-specific updates to help you navigate your case effectively.</div>
+            </div>
+            <div class="card card-hearing-resources" onmouseover="showModal(this)" onmouseout="hideModal(this)">
+                <img src="https://th.bing.com/th/id/OIP.hZmxuESWALVuO6wvvYNmUgAAAA?w=256&h=256&rs=1&pid=ImgDetMain" alt="Hearing Resources">
+                <h2 class = "card-heading">Hearing Resources</h2>
+                <button>View Resources</button>
+                <div class="modal">Find comprehensive information on preparing for and participating in hearings, including virutal, hyrbid and in-person hearing protocols, tips and best practices.</div>
+            </div>
+            <div class="card card-courtroom-technology" onmouseover="showModal(this)" onmouseout="hideModal(this)">
+                <img src="https://static.vecteezy.com/system/resources/previews/000/570/073/original/vector-desktop-computer-icon.jpg" alt="Courtroom Technology">
+                <h2 class = "card-heading">Courtroom Technology</h2>
+                <button>View Mateirals</button>
+                <div class="modal">Discover the latest courtroom technologies, from electronic evidence presentation tools to virtual hearing platforms, ensuring you are equipped for modern litigation.</div>
+            </div>
+            <div class="card card-software-guides" onmouseover="showModal(this)" onmouseout="hideModal(this)">
+                <img src="https://th.bing.com/th/id/OIP.rVX9un3kon2vZsHRjDj3mAAAAA?rs=1&pid=ImgDetMain" alt="Software Guides">
+                <h2 class = "card-heading">Software Guides</h2>
+                <button>View Guides</button>
+                <div class="modal">Access details guides and tutorials on essential software, helping you utilise these tools efficiently for case management, document preparation and more.</div>
+            </div>
+            <div class="card card-public-profession" onmouseover="showModal(this)" onmouseout="hideModal(this)">
+                <img src="https://www.nicepng.com/png/detail/129-1290978_teacher-teacher-icon-png.png" alt="Public and Profession">
+                <h2 class="card-heading">Public and Profession</h2>
+                <button>View Materials</button>
+                <div class="modal">Stay informed with resources designed for both the public and legal professioanls, including education mateirals and public notes.</div>
+            </div>
+            <div class="card card-mediation-adr" onmouseover="showModal(this)" onmouseout="hideModal(this)">
+                <img src="https://i.fbcd.co/products/original/6b619775a4ac628440762cb818859616abb4861d918427d0c55af3908dad0e71.jpg" alt="Mediation and Alternative Dispute Resolution (ADR)">
+                <h2 class = "card-heading">Mediation and ADR</h2>
+                <button>View Resources</button>
+                <div class="modal">Learn about mediaition and ADR processes, including how to use the technology in the meidation centre and ADR center.</div>
+            </div>
+            <div class="card card-circuit-resources" onmouseover="showModal(this)" onmouseout="hideModal(this)">
+                <img src="https://www.pngitem.com/pimgs/m/108-1084481_map-location-icon-png-free-download-transparent-map.png" alt="Circuit Resources">
+                <h2 class = "card-heading">Circuit Resources</h2>
+                <button>View Resources</button>
+                <div class="modal">Get information about the technology and process for circuit courts and resources.</div>
+            </div>
+            <div class="card card-general-court-operations" onmouseover="showModal(this)" onmouseout="hideModal(this)">
+                <img src="https://th.bing.com/th/id/OIP.A0sd1uo0e3wvK5lFRVSN9gHaHa?rs=1&pid=ImgDetMain" alt="General Court Operations">
+                <h2 class = "card-heading">General Court Operations</h2>
+                <button>View Materials</button>
+                <div class="modal">Understand the general operations of the court, including administrative procedures.</div>
+            </div>
+    </main>
+
+</body>
+</html>
